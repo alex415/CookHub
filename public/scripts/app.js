@@ -19,32 +19,17 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', function ($r
     requireBase: false
   });
 
-
-  // delete $httpProvider.defaults.headers.common["X-Requested-With"];
-  // delete $httpProvider.defaults.headers.post['Content-type'];
 }]);
-
-
 
 app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
 
   $scope.submit = function () {
-    // $scope.tag = '';
-    var tag = $scope.tag;
-
-
-    $http.post('/api', {tag: tag})
+    var recipe = $scope.tag;
+    $http.post('/api', {tag: recipe})
       .then(function(response) {
+        $scope.recipeData = JSON.parse(response.data);
         console.log(response.data);
       });
-
-    // $http({method: 'POST', url: '/api', headers: {
-    // "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }, data: {tag: hello}}).
-    //   success(function(data, status, headers, config) { 
-    //     alert(data);
-    //   });
   };
 
 }]); // end
-
-

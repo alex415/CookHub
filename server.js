@@ -1,6 +1,5 @@
 var express = require('express'),
     app = express(),
-    cors = require('cors'),
     request = require('request'),
     bodyParser = require('body-parser');
 
@@ -15,10 +14,10 @@ app.use(express.static(__dirname + '/public'));
 
 // api request
 app.post('/api', function (req, res) {
-  var tag = req.body.tag;
-  request("http://food2fork.com/api/search?key=c75d4d5e1941dafbbdc4b6d0ba39b1cf&q=" + tag, function (error, response, body) {
+  var recipe = req.body.tag;
+  request("http://food2fork.com/api/search?key=c75d4d5e1941dafbbdc4b6d0ba39b1cf&&q=" + recipe, function (error, response, body) {
     res.json(body);
-    console.log(tag);
+    console.log(recipe);
   });
 });
 

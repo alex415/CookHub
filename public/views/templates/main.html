@@ -9,14 +9,13 @@
         <button type="submit" value="Search" class="btn btn-primary"> Search</button>
       </form>
 
+      <div ng-repeat="recipe in recipeData.recipes">
+        <img ng-src="{{recipe.image_url}}">
+<!--         <p>{{recipe.title}}</p>
+        <p>{{recipe.publisher}}</p>
+        <p>{{recipe.source_url}}</p> -->
+      </div>
+
     </div>
   </div>
 </div>
-
-{{tag}}
-<!-- <form ng-submit="submit()" role="form">
-  <div class="form-group">
-    <input type="text" class="form-control" ng-model="result" options="options" details="details">
-  </div>
-  <button type="submit" class="btn btn-primary" id="main-button">FIND MY RECIPES</button>
-</form> -->
