@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="recipeApp" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- bootstrap css cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- custom styles -->
+  <link type="text/css" rel="stylesheet" href="styles/style.css">
+  <link type="text/css" rel="stylesheet" href="styles/nav.css">
+
+  <!-- angular cdn -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+
+  <!-- ng route -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
+
+  <!-- custom scripts -->
+  <script type="text/javascript" src="scripts/app.js"></script>
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <title>Recipe App</title>
+</head>
+<body ng-controller="MainCtrl">
+
+  <ng-view></ng-view>
+
+</body>
+</html>
