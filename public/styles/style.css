@@ -1,0 +1,26 @@
+.align-center {
+  text-align: center;
+}
+
+#search-form {
+  min-width: 480px;
+}
+
+.jumbotron {
+  color: white;
+  min-height: 480px;
+  border-radius: 6px;
+  background: url('http://www.tiazza.com/graphics/nutrition/party/Cooking_Class_at_Mozaic_(8056044088).jpg') no-repeat center center;
+  background-size: cover;
+  padding: 5em inherit;
+}
+
+.singe-recipe {
+
+}
+
+.recipe-image {
+  width: 221px;
+  height: 221px;
+
+}
