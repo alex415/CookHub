@@ -13,14 +13,40 @@
   background: url('http://www.tiazza.com/graphics/nutrition/party/Cooking_Class_at_Mozaic_(8056044088).jpg') no-repeat center center;
   background-size: cover;
   padding: 5em inherit;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.singe-recipe {
+.recipe-container {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
 
+.recipe-content {
+  border: 1px solid #e2e2e2;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+  padding: 10px;
+/*  border-radius: 3px;*/
+  background-color: white;
 }
 
 .recipe-image {
-  width: 221px;
-  height: 221px;
-
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  background-position:center top;
+/*  margin-bottom: 15px;*/
 }
+
+.recipe-info {
+  background-color: #383838;
+  color: white !important;
+  width: 100%;
+  height: 150px;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  text-align: center;
+}
+

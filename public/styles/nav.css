@@ -1,4 +1,10 @@
-.nav-header {
+.navbar-header {
   text-align: center;
   color: grey;
+  width: 100%;
+  padding: 25px;
+}
+
+.navbar-brand {
+  float: none;
 }
