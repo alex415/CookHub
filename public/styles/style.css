@@ -1,10 +1,27 @@
+@font-face {
+  font-family: Panton Bold;
+  src: url(/fonts/PantonBold.otf);
+}
+
+@font-face {
+  font-family: GothamNarrow-Light;
+  src: url(/fonts/GothamNarrow-Light.otf);
+}
+
+@font-face {
+  font-family: BrandonText-Regular;
+  src: url(/fonts/BrandonText-Regular.otf);
+}
+
 body {
   padding: 0;
+  font-family: GothamNarrow-Light;
 }
 
 .jumbotron-header {
   text-align: center;
   padding-top: 75px;
+  font-family: BrandonText-Regular;
 }
 
 .form-content {
@@ -71,4 +88,3 @@ body {
   padding-left: 5px;
   text-align: center;
 }
-
