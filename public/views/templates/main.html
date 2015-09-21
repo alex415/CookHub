@@ -1,11 +1,13 @@
 <div class="container">
   <div class="jumbotron">
-    <h1 class="align-center">Welcome!</h1>
-    <form class="form-inline align-center" ng-submit="submit()">
+    <div class="jumbotron-header">
+      <h1>Welcome!</h1>
+    </div>
+    <form class="form-inline form-content" ng-submit="submit()">
       <div class="form-group">
-        <input type="text" ng-model="tag" class="form-control" placeholder="Let's find some recipes for you" id="search-form">
+        <input type="text" ng-model="tag" class="form-control form-input" placeholder="Let's find some recipes for you">
+        <button type="submit" value="Search" class="btn btn-default search-button"> Search</button>
       </div>
-      <button type="submit" value="Search" class="btn btn-primary"> Search</button>
     </form>
   </div>
 </div>
