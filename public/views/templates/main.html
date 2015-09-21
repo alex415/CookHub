@@ -7,9 +7,9 @@
           <h1>Find delicious & trending recipes fast! </h1>
         </div>
         <form class="form-inline form-content" ng-submit="submit()">
-          <div class="form-group">
+          <div class="form-group"><span>
             <input type="text" ng-model="tag" class="form-control form-input" placeholder="Let's find some recipes for you">
-            <button type="submit" value="Search" class="btn btn-default search-button"> Search</button>
+            <button type="submit" value="Search" class="btn btn-default search-button"> Search</button></span>
           </div>
         </form>
       </div>
@@ -20,7 +20,7 @@
 
         <div ng-repeat="recipe in recipeData.recipes">
 
-          <div class="col-md-3 recipe-container">
+          <div class="col-sm-3 recipe-container">
             <div class="recipe-content">
 
               <img ng-src="{{recipe.image_url}}" class="recipe-image">
