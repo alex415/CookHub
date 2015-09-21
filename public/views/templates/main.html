@@ -1,36 +1,42 @@
 <div class="container">
-  <div class="jumbotron">
-    <div class="jumbotron-header">
-      <h1>Welcome!</h1>
-    </div>
-    <form class="form-inline form-content" ng-submit="submit()">
-      <div class="form-group">
-        <input type="text" ng-model="tag" class="form-control form-input" placeholder="Let's find some recipes for you">
-        <button type="submit" value="Search" class="btn btn-default search-button"> Search</button>
-      </div>
-    </form>
-  </div>
-</div>
-
-<div class="container">
   <div class="row">
 
-    <div ng-repeat="recipe in recipeData.recipes">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="jumbotron-header">
+          <h1>Welcome!</h1>
+        </div>
+        <form class="form-inline form-content" ng-submit="submit()">
+          <div class="form-group">
+            <input type="text" ng-model="tag" class="form-control form-input" placeholder="Let's find some recipes for you">
+            <button type="submit" value="Search" class="btn btn-default search-button"> Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-      <div class="col-md-3 recipe-container">
-        <div class="recipe-content">
+    <div class="container">
+      <div class="row">
 
-          <img ng-src="{{recipe.image_url}}" class="recipe-image">
+        <div ng-repeat="recipe in recipeData.recipes">
 
-          <div class="recipe-info">
-            <p>{{recipe.title}}</p>
-            <!-- <p>{{recipe.publisher}}</p> -->
-            <a href="{{recipe.source_url}}" target="_blank">View Recipe</a>
+          <div class="col-md-3 recipe-container">
+            <div class="recipe-content">
+
+              <img ng-src="{{recipe.image_url}}" class="recipe-image">
+
+              <div class="recipe-info">
+                <p>{{recipe.title}}</p>
+                <!-- <p>{{recipe.publisher}}</p> -->
+                <a href="{{recipe.source_url}}" target="_blank">View Recipe</a>
+              </div>
+
+            </div>
           </div>
 
         </div>
-      </div>
 
+      </div>
     </div>
 
   </div>
