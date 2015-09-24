@@ -67,10 +67,12 @@ body {
   padding: 10px;
 /*  border-radius: 3px;*/
   background-color: white;
+  max-width: 240.5px;
 }
 
 .recipe-image {
   height: 150px;
+  max-width: 240.5px;
   width: 100%;
   background-size: cover;
   background-position:center top;
@@ -81,6 +83,7 @@ body {
   background-color: #383838;
   color: white !important;
   width: 100%;
+  max-width: 240.5px;
   height: 140px;
   padding-top: 20px;
   padding-right: 5px;
